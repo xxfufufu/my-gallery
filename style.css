@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+}
+.gallery-container {
+    max-width: 1000px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 30px;
+}
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 6px;
+}
+
+.photo-profile {
+    width: 30%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4E5150;
+}
+
+.address {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A9A9A9;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+}
+
+.detail {
+    background: #E5E5E5;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4E5150;
+}
+
+.what {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+}
+
+.photo-profile img {
+    border-radius: 16px;
+}
+.content-wrapper img{
+    border-radius: 12px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "photo1 photo2 photo2"
+    "photo3 photo3 photo4"
+    "photo6 photo5 photo4";
+    grid-gap: 5px;
+}
+.content1 {
+    grid-area: photo1;
+}
+.content2 {
+    grid-area: photo2;
+}
+.content3 {
+    grid-area: photo3;
+}
+.content4 {
+    grid-area: photo4;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.content5 {
+    grid-area: photo5;
+}
+.content6 {
+    grid-area: photo6;
+}
+.content4 img {
+    width: 105%;
+    height: 105%;
+}
+footer {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B9BDCF;
+}
